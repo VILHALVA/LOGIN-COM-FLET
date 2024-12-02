@@ -30,6 +30,7 @@ Este aplicativo é uma ferramenta simples de **Cadastro e Login de Usuário** co
    - O aplicativo exibe uma janela com os seguintes campos e botões:
      - **Campo de entrada "SEU USUÁRIO"**: O usuário deve digitar seu nome de usuário.
      - **Campo de entrada "SUA SENHA"**: O usuário deve digitar sua senha (a senha será exibida como asteriscos `*` por segurança).
+     - Você pode ver ou ocultar a senha clicando no ícone de 'olho' ao lado do campo de senha. Este comportamento já está implementado no campo de senha, pois a propriedade `can_reveal_password=True` no componente `TextField` do Flet permite que o usuário revele ou oculte a senha com o ícone de olho.
      - **Botão "CADASTRAR"**: O usuário clica neste botão para criar um novo cadastro. O nome de usuário e a senha são verificados e, se estiverem corretos, a senha será criptografada e armazenada.
      - **Botão "LOGIN"**: O usuário clica neste botão para fazer login. O nome de usuário e a senha fornecida são comparados com os dados armazenados no banco de dados, e uma mensagem é exibida com o resultado do login.
 
@@ -54,6 +55,7 @@ Este aplicativo é uma ferramenta simples de **Cadastro e Login de Usuário** co
 3. **Cadastro**:
    - Digite um nome de usuário no campo "SEU USUÁRIO".
    - Digite uma senha no campo "SUA SENHA".
+   - Você pode ver ou ocultar a senha clicando no ícone de 'olho' ao lado do campo de senha. 
    - Clique no botão **"CADASTRAR"**.
    - Se o nome de usuário ainda não estiver registrado, o sistema criará o cadastro e armazenará a senha de forma segura (criptografada).
 
